@@ -1,12 +1,12 @@
 body {
 }
+.titulo-principal {
+  margin-left: 20px;
+}
+.titulo-centralizado {
+  text-align: center;
+}
 
-h1 {
-  text-align: center;
-}
-h2 {
-  text-align: center;
-}
 p {
   text-align: center;
 }
