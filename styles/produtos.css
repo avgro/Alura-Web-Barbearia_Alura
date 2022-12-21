@@ -1,4 +1,4 @@
-/* Inínio Cabeçalho */
+/* Início Cabeçalho */
 
 header {
   background-color: #bbbbbb;
@@ -25,6 +25,13 @@ nav li a {
   font-size: 22px;
   text-decoration: none;
 }
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+/* Início Main */
 .produtos {
   width: 940px;
   margin: 0 auto;
@@ -41,10 +48,19 @@ nav li a {
   box-sizing: border-box;
   border-radius: 10px;
 }
-
+.produtos li:hover {
+  border-color: #c78c19;
+}
+.produtos li:active {
+  border-color: #088c19;
+}
 .produtos h2 {
   font-size: 30px;
   font-weight: bold;
+}
+
+.produtos li:hover h2 {
+  font-size: 34px;
 }
 
 .produto-descricao {
@@ -53,5 +69,19 @@ nav li a {
 .produto-preco {
   font-size: 22px;
   font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Início Footer */
+
+footer {
+  text-align: center;
+  background: url("../img/bg.jpg");
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 13px;
   margin-top: 20px;
 }
