@@ -65,6 +65,7 @@ p {
   width: 120px;
   float: left;
   margin: 0 20px 20px 0;
+  border-radius: 5px;
 }
 
 .principal p {
@@ -91,6 +92,7 @@ p {
 .geolocalizacao {
   width: 50%;
   margin: 1em auto;
+  border-radius: 5px;
 }
 
 .beneficios {
@@ -113,13 +115,23 @@ p {
   line-height: 1.5;
 }
 
+.itens:before {
+  content: "★";
+}
+
 .itens:first-child {
   font-weight: bold;
 }
 .img-beneficios {
-  width: 51%;
+  width: 50%;
+  border-radius: 5px;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 10px 10px 10px 0 #000000;
 }
-
+.img-beneficios:hover {
+  opacity: 0.3;
+}
 .video {
   width: 560px;
   margin: 2em auto;
@@ -136,4 +148,29 @@ footer {
   color: #fff;
   font-size: 13px;
   margin-top: 20px;
+}
+
+/* Início Media Query */
+
+@media screen and (max-width: 480px) {
+  .cabecalho,
+  .principal,
+  .conteudo-beneficios,
+  .geolocalizacao,
+  .video {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .navegacao {
+    position: static;
+  }
+
+  .beficios-lista,
+  .img-beneficios {
+    width: 100%;
+  }
 }

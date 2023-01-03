@@ -1,3 +1,7 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* Início Cabeçalho */
 
 header {
@@ -9,16 +13,16 @@ header {
   width: 80%;
   margin: 0 auto;
 }
-nav {
+.navegacao {
   position: absolute;
   top: 50%;
   right: 0;
 }
-nav li {
+.navegacao li {
   display: inline;
   margin-left: 15px;
 }
-nav li a {
+.navegacao li a {
   text-transform: uppercase;
   color: #000;
   font-weight: bold;
@@ -26,7 +30,7 @@ nav li a {
   text-decoration: none;
 }
 
-nav a:hover {
+.navegacao a:hover {
   color: #c78c19;
   text-decoration: underline;
 }
@@ -50,17 +54,15 @@ nav a:hover {
 }
 .produtos li:hover {
   border-color: #c78c19;
+  box-shadow: 10px 10px 10px 0 #000000;
+  transition: 400ms;
 }
 .produtos li:active {
   border-color: #088c19;
 }
 .produtos h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
-}
-
-.produtos li:hover h2 {
-  font-size: 34px;
 }
 
 .produto-descricao {
@@ -84,4 +86,31 @@ footer {
   color: #fff;
   font-size: 13px;
   margin-top: 20px;
+}
+
+/* Início Media Query */
+@media screen and (max-width: 480px) {
+  .cabecalho,
+  .principal,
+  .conteudo-beneficios,
+  .geolocalizacao,
+  .video {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .navegacao {
+    position: static;
+  }
+  .produtos {
+    margin: 0 auto;
+    align-items: center;
+  }
+  .produtos li {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
